@@ -128,7 +128,8 @@ Lastly a quick heads-up about how PHP works with types. Like JavaScript, PHP is 
 ('type' as in 'types of things' not 'she typed on a keyboard').
 
 This means that PHP will try its best to 'do the right thing' if you use a data type in the wrong place.
-Remember how `echo` expects a String in our "Hello, World!" example above? 
+As we will see 'doing the right thing' is somewhat subjective. Remember how `echo` expects a String in
+our "Hello, World!" example above? 
 
 Use PsySH to evaluate this code:
 
@@ -138,13 +139,12 @@ echo true
 
 What was the result and was it what you expected?
 
-The reason this happens is that PHP _turns the Boolean into a string_.
-PHP has some predefined steps for converting between types but these don't cover turning a Boolean with the value `true` into a 
-string directly. It _does_ have a step to turn a `true` Boolean into an integer so it tries this rather than failing. Now it has an Integer but it still needs a String. Hooray PHP _does_ have a step to turn an integer into a string (the Integer becomes a string containing a text version of the number) and that result is used by `echo`.
+The reason this happens is that PHP _turns the Boolean into a string_. Similar to JavaScript PHP has some
+predefined steps for converting between types and these aren't always quite what you'd expect.
 
 _Strongly_ typed languages like Java or C# will not coerce values into different types and your program would exit with an error.
 
-You can coerce types manually in PHP. You probaly won't use this very often but it is known as 'casting'. Use PsySH and precede
+You can coerce types manually in PHP. This explicit type coercion is known as 'casting'. Use PsySH and precede
 a value with the type you want to convert it to in brackets. One of:
 - **String**: `(string)`
 - **Iteger**: `(int)`
@@ -159,7 +159,7 @@ e.g.
 
 The above casts a Boolean to a String.
 
-Don't worry about trying to learn the steps PHP uses to convert (coerce) these types any time soon. Just be aware it does this
+Don't worry about trying to learn the steps PHP uses to convert (coerce) types any time soon. Just be aware it does this
 if you see unexpected values when debugging your programs 😊
 
 ## Recap
