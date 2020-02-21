@@ -1,83 +1,173 @@
 ---
 layout: page
-title: Introduction to PHP
+title: Basic Data Types
 ---
 
-##### Requirements
+In this tutorial, we're going to look at the basic data types in PHP. These basic
+types are known as 'scalar' types:
+- **Strings** &ndash; used to display text (think of a 'string' of characters)
+- **Integers** &ndash; whole number numeric values e.g. 4, 7, 3000000, 42
+- **Floats** &ndash; numbers with a 'floating' point. The floating part means there
+  isn't a fixed number of places after the point e.g. 1.2, 43.002, 0.01 are all floats
+- **Booleans** &ndash; either 'true' or 'false' it's as simple as that 🤓
 
-* 15 minutes
-* PHP installed - PHP comes packaged in various ways. Please use our [installation guide](../using-php/simple.html) for an in-depth guide to the options. This tutorial assumes you have installed the command-line version. If you use other methods, you may not need to start the PHP WebServer.
+In this tutorial we'll work in PsySH the REPL we installed in the
+[Installing PHP](/php/lesson0/tutorial.html) tutorial. Fire up your Terminal and type in
+`psysh` then press return.
 
-##### Achievements
+> **Tip:** If you need to exit PsySH press `Ctrl + C`
 
-By the end of this tutorial you will be able to:
 
-* write a **Hello World** Application that outputs on the:
-    * Command Line (CLI)
-    * Browser
+## Strings
+You may have already seen this coding tradition before. We'll start by printing "Hello, World!"
+to the console. Type the following after the PsySH prompt (`>>>`) followed by return:
 
----
-
-## What is PHP?
-
-From the **PHP** [website](http://php.net/manual/en/intro-whatis.php)
-
-> PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.
-
-Well what does this mean? It is very easy to build dynamic websites using **PHP** as the server-side language, which generates **HTML**.
-
-## What does PHP look like?
-
-A simple Hello World application would look like the following:
-
-*File: index.php*
-
-```php
-<?php
-echo "Hello World";
+```
+echo 'Hello, World!'
 ```
 
-1. The file must end with the extension `.php`
-2. The file must begin with the opening tag `<?php`
-3. `"` are used to Open/Close a string
-4. `echo` Outputs the string [echo on php website](http://php.net/manual/en/function.echo.php)
-5. `;` must end every statement
+You should see the text `Hello, World!` output on the next line. The `echo` part here is a PHP
+language construct which expects to be followed by a String to output. The String is the group
+of characters surrounded by single quotes. Try typing your own message.
 
-## How to run the script?
+You can also write Strings using double quotes in PHP. This can be useful when you need to
+output a string which _contains_ either single or double quotes try:
 
-On the Command Line (CLI), type:
-
-```bash
-php index.php
+```
+echo "It's PHP day"
 ```
 
-And the output that displays just below where you typed will be:
+or
 
-```bash
-Hello World
+```
+echo '"What larks, Pip" said Joe'
 ```
 
-## How to the output in the browser?
+There are also some other useful differences between Strings using single and double quotes
+but we'll get to those in a later tutorial.
 
-Seeing it on the Command Line is great, but what about the browser? We will need to get a WebServer running, the easiest way is to use the built-in PHP WebServer.
+TODO fat arrow return vs output
 
-*Note: Built-in PHP WebServer is great for Development, but **NOT** Production.*
+If you have two strings and want to join them together in PHP you use a dot `.` 
+The technical term for this is 'concatenation'. Type the following in PsySH and press enter:
 
-Go to the directory where you created the _index.php_ file and run the following command:
-
-```bash
-$ php -S 0.0.0.0:8080
+```
+echo 'one, ' . 'two, ' . 'three!'
 ```
 
-1. `php` is the same command from before, that we used to run our **php** script
-2. `-S` means built-in WebServer
-3. `0.0.0.0` is the IP that the WebServer should listen on. By using `0` it will listen on everything - fine for development
-4. `8080` is the port to listen on - fine for development but in production the default port is `80` and therefore not required when accessing a URL
+## Integers and Floats
 
-Lets see the script output in your web browser! In your web browser navigate to [http://localhost:8080/](http://localhost:8080/) and you should see:
+You can use integers and floats to perform arithmetic in PHP using a handful of operators. In PsySH type the following
+and press return to see the result:
 
-![Hello World](assets/images/helloworld.png)
+```
+6 - 2
+```
 
-## Summary
+or
 
-Now you should know how to create a simple **PHP** script and run it via the Command Line or via the Built-in **PHP** WebServer and see the output to the Command Line or the Browser respectively.
+```
+3 + 9.5
+```
+
+Multiplication and division use the `*` and `/` operators:
+
+```
+2.25 * 4
+```
+
+or
+
+```
+12 / 3 + 1
+```
+
+In the last example the result is 5 as php carries out the multiplication _before_ adding five. If we want
+to change this order so that 12 is divided by the result of 3 + 1 we can use brackets to group the addition:
+
+```
+12 / (3 + 1)
+```
+
+We can even use brackets to group brackets if we want to get decadent:
+```
+(12 / (3 + 1)) * 8
+```
+
+There's also an interesting modulo operator `%` which will give the remainder after dividing one number by another.
+Try these out in PsySH:
+
+```
+12 % 4
+```
+
+and
+
+```
+11 % 4
+```
+
+Modulo might seem a bit impractical right now but we'll see later how it can be used to theme alternating stripes
+in a web page.
+
+## Booleans
+
+Named after Lincolnshire mathematician George Boole who worked on algebraic logic. Booleans represent an on or
+off value and are usually used in control structures to change what's happening in a program.
+Use PsySH to evaluate `true` and `false`. Spoiler &ndash; they get more exciting later 😜
+
+Booleans in PHP are case-insensitive which means all the following are valid `true`, `True`, `FALSE`, `falsE`, `fAlSE` 
+
+&hellip; but we'll stick to all lowercase as this is the standard form [agreed by the PHP community](https://www.php-fig.org/psr/psr-12/)
+and writing it like `fAlSE` looks a bit crackers and is difficult to read.
+
+## Switching between types
+
+Lastly a quick heads-up about how PHP works with types. Like JavaScript, PHP is a _weakly typed_ language
+('type' as in 'types of things' not 'she typed on a keyboard').
+
+This means that PHP will try its best to 'do the right thing' if you use a data type in the wrong place.
+Remember how `echo` expects a String in our "Hello, World!" example above? 
+
+Use PsySH to evaluate this code:
+
+```
+echo true
+```
+
+What was the result and was it what you expected?
+
+The reason this happens is that PHP _turns the Boolean into a string_.
+PHP has some predefined steps for converting between types but these don't cover turning a Boolean with the value `true` into a 
+string directly. It _does_ have a step to turn a `true` Boolean into an integer so it tries this rather than failing. Now it has an Integer but it still needs a String. Hooray PHP _does_ have a step to turn an integer into a string (the Integer becomes a string containing a text version of the number) and that result is used by `echo`.
+
+_Strongly_ typed languages like Java or C# will not coerce values into different types and your program would exit with an error.
+
+You can coerce types manually in PHP. You probaly won't use this very often but it is known as 'casting'. Use PsySH and precede
+a value with the type you want to convert it to in brackets. One of:
+- **String**: `(string)`
+- **Iteger**: `(int)`
+- **Float**: `(float)`
+- **Boolean**: `(bool)`
+
+e.g.
+
+```
+(string)false
+```
+
+The above casts a Boolean to a String.
+
+Don't worry about trying to learn the steps PHP uses to convert (coerce) these types any time soon. Just be aware it does this
+if you see unexpected values when debugging your programs 😊
+
+## Recap
+
+We learned about the basic data types we'll be working with in PHP:
+
+- String
+- Integer
+- Float
+- Boolean
+
+We also learned how to use PsySH (our REPL) to experiment with PHP types and that we can exit PsySH using `Ctrl + C`.

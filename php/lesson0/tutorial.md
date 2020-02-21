@@ -43,7 +43,7 @@ development much easier.
 3. Type `sudo apt-get update` in your Terminal and press enter to update all the Ubuntu
    code packages which will take a few minutes. Using `sudo` at the start is similar to
    running as Administrator on Windows and you'll be asked for the password you entered
-   in step 2. Be very careful when running commands with `sudo` as Linux will expect you
+   in step 2. Be very careful when running commands with `sudo` as Linux will trust you
    know what you're doing and allow you to make system level changes without safety checks
 
 Nice work you're running Ubuntu! 💃 Now follow the [Linux](#linux) instructions
@@ -51,14 +51,13 @@ in the next section 👇 to get Homebrew installed using your Terminal.
 
 ## Linux
 
-Linux is a free and open source operating system used by many coders to
-develop web software as the majority of the world's webservers run on Linux.
-There are many different flavours called 'distributions' each with their own
-way of managing code packages.
+Linux is a free and open source operating system used by many developers to
+build web software as the majority of the world's webservers run on Linux.
+The Linux Terminal is very similar to the MacOS Terminal.
 
-If you are not experienced with the Linux Terminal it can be
-tricky getting the latest version of PHP installed which is why we will
-use Homebrew to install PHP for these beginner tutorials. You can always
+Different flavours of Linux called 'distributions' have their own
+way of managing code packages. To keep things consistent we will use
+Homebrew to install PHP for these beginner tutorials. You can always
 uninstall it later and use your distribution's PHP packages if you move on
 to more advanced Linux usage.
 
