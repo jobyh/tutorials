@@ -15,14 +15,14 @@ In this tutorial we'll work in PsySH the REPL we installed in the
 [Installing PHP](/php/lesson0/tutorial.html) tutorial. Fire up your Terminal and type in
 `psysh` then press return.
 
-> **Tip:** If you need to exit PsySH press `Ctrl + C`
+**Tip: If you need to exit PsySH press `Ctrl + C`**
 
 
 ## Strings
 You may have already seen this coding tradition before. We'll start by printing "Hello, World!"
 to the console. Type the following after the PsySH prompt (`>>>`) followed by return:
 
-```
+```php
 echo 'Hello, World!'
 ```
 
@@ -33,13 +33,13 @@ of characters surrounded by single quotes. Try typing your own message.
 You can also write Strings using double quotes in PHP. This can be useful when you need to
 output a string which _contains_ either single or double quotes try:
 
-```
+```php
 echo "It's PHP day"
 ```
 
 or
 
-```
+```php
 echo '"What larks, Pip" said Joe'
 ```
 
@@ -51,59 +51,60 @@ TODO fat arrow return vs output
 If you have two strings and want to join them together in PHP you use a dot `.` 
 The technical term for this is 'concatenation'. Type the following in PsySH and press enter:
 
-```
+```php
 echo 'one, ' . 'two, ' . 'three!'
 ```
 
-## Integers and Floats
+## Integers &amp; Floats
 
 You can use integers and floats to perform arithmetic in PHP using a handful of operators. In PsySH type the following
 and press return to see the result:
 
-```
+```php
 6 - 2
 ```
 
 or
 
-```
+```php
 3 + 9.5
 ```
 
 Multiplication and division use the `*` and `/` operators:
 
-```
+```php
 2.25 * 4
 ```
 
 or
 
-```
+```php
 12 / 3 + 1
 ```
 
-In the last example the result is 5 as php carries out the multiplication _before_ adding five. If we want
+In the last example the result is 5 as PHP carries out the multiplication _before_ adding five. If we want
 to change this order so that 12 is divided by the result of 3 + 1 we can use brackets to group the addition:
 
-```
+```php
 12 / (3 + 1)
 ```
 
 We can even use brackets to group brackets if we want to get decadent:
-```
+
+```php
 (12 / (3 + 1)) * 8
 ```
 
 There's also an interesting modulo operator `%` which will give the remainder after dividing one number by another.
 Try these out in PsySH:
 
-```
+```php
 12 % 4
 ```
 
 and
 
-```
+```php
 11 % 4
 ```
 
@@ -131,7 +132,7 @@ Remember how `echo` expects a String in our "Hello, World!" example above?
 
 Use PsySH to evaluate this code:
 
-```
+```php
 echo true
 ```
 
@@ -152,7 +153,7 @@ a value with the type you want to convert it to in brackets. One of:
 
 e.g.
 
-```
+```php
 (string)false
 ```
 
