@@ -147,7 +147,7 @@ _Strongly_ typed languages like Java or C# will not coerce values into different
 You can coerce types manually in PHP. This explicit type coercion is known as 'casting'. Use PsySH and precede
 a value with the type you want to convert it to in brackets. One of:
 - **String**: `(string)`
-- **Iteger**: `(int)`
+- **Integer**: `(int)`
 - **Float**: `(float)`
 - **Boolean**: `(bool)`
 
