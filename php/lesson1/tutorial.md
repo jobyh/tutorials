@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Basic Data Types
+title: Strings, Integers, Floats &amp; Booleans
 ---
 
 In this tutorial, we're going to look at the basic data types in PHP. These basic
@@ -15,7 +15,7 @@ In this tutorial we'll work in PsySH the REPL we installed in the
 [Installing PHP](/php/lesson0/tutorial.html) tutorial. Fire up your Terminal and type in
 `psysh` then press return.
 
-**Tip: If you need to exit PsySH press `Ctrl + C`**
+_**Tip**: If you need to exit PsySH press `Ctrl + C`_
 
 
 ## Strings
@@ -114,8 +114,8 @@ in a web page.
 ## Booleans
 
 Named after Lincolnshire mathematician George Boole who worked on algebraic logic. Booleans represent an on or
-off value and are usually used in control structures to change what's happening in a program.
-Use PsySH to evaluate `true` and `false`. Spoiler &ndash; they get more exciting later 😜
+off or 'true' / 'false' value and are usually used in control structures to change what's happening in a program.
+Use PsySH to evaluate `true` and `false`. Spoiler &ndash; don't get toooo excited 😜
 
 Booleans in PHP are case-insensitive which means all the following are valid `true`, `True`, `FALSE`, `falsE`, `fAlSE` 
 
@@ -157,7 +157,7 @@ e.g.
 (string)false
 ```
 
-The above casts a Boolean to a String.
+The above casts a Boolean to a String. Use PsySH to experiment casting values to different types.
 
 Don't worry about trying to learn the steps PHP uses to convert (coerce) types any time soon. Just be aware it does this
 if you see unexpected values when debugging your programs 😊
