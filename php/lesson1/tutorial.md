@@ -3,8 +3,22 @@ layout: page
 title: Strings, Integers, Floats &amp; Booleans
 ---
 
+## Prerequisites
+
+Welcome to the PHP tutorial! PHP is an open source language used to generate
+web pages and powers hugely popular platforms like Wordpress, Drupal and the
+Laravel framework.
+
+In these tutorials we'll work towards putting together a small website so you
+need to have an understanding of HTML and CSS. If you're not familiar with these we recommend completing the tutorials on this
+
+If you already have PHP installed just check through the [installation instructions](php/lesson0/tutorial.html) and make sure that you also have **PsySH** installed
+
+## Introduction
+
 In this tutorial, we're going to look at the basic data types in PHP. These basic
 types are known as 'scalar' types:
+
 - **Strings** &ndash; used to display text (think of a 'string' of characters)
 - **Integers** &ndash; whole number numeric values e.g. 4, 7, 3000000, 42
 - **Floats** &ndash; numbers with a 'floating' point. The floating part means there
@@ -17,8 +31,8 @@ In this tutorial we'll work in PsySH the REPL we installed in the
 
 _**Tip**: If you need to exit PsySH press `Ctrl + C`_
 
-
 ## Strings
+
 You may have already seen this coding tradition before. We'll start by printing "Hello, World!"
 to the console. Type the following after the PsySH prompt (`>>>`) followed by return:
 
@@ -124,7 +138,7 @@ Named after Lincolnshire mathematician George Boole who worked on algebraic logi
 off or 'true' / 'false' value and are usually used in control structures to change what's happening in a program.
 Use PsySH to evaluate `true` and `false`. Spoiler &ndash; don't get toooo excited 😜
 
-Booleans in PHP are case-insensitive which means all the following are valid `true`, `True`, `FALSE`, `falsE`, `fAlSE` 
+Booleans in PHP are case-insensitive which means all the following are valid `true`, `True`, `FALSE`, `falsE`, `fAlSE`
 
 &hellip; but we'll stick to all lowercase as this is the standard form [agreed by the PHP community](https://www.php-fig.org/psr/psr-12/)
 and writing it like `fAlSE` looks a bit crackers and is difficult to read.
@@ -136,7 +150,7 @@ Lastly a quick heads-up about how PHP works with types. Like JavaScript, PHP is 
 
 This means that PHP will try its best to 'do the right thing' if you use a data type in the wrong place.
 As we will see 'doing the right thing' is somewhat subjective. Remember how `echo` expects a String in
-our "Hello, World!" example above? 
+our "Hello, World!" example above?
 
 Use PsySH to evaluate this code:
 
@@ -153,6 +167,7 @@ _Strongly_ typed languages like Java or C# will not coerce values into different
 
 You can coerce types manually in PHP. This explicit type coercion is known as 'casting'. Use PsySH and precede
 a value with the type you want to convert it to in brackets. One of:
+
 - **String**: `(string)`
 - **Integer**: `(int)`
 - **Float**: `(float)`
