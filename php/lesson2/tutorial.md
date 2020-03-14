@@ -165,8 +165,9 @@ values known as an _Associative Array_:
 $anneBonny = ['hat' => 'tricorn', 'weapon' => 'pistol', 'dubloons' => 107];
 ```
 
-This form lets us specify custom indexes for our array. If we want to know
-how many dubloons our pirate has we can access the value like this:
+This form lets us specify custom indexes for our array. If you are already
+familiar with JavaScript using arrays like this is a bit like objects.
+If we want to know how many dubloons our pirate has we can access the value like this:
 
 ```php
 $anneBonny['dubloons']
@@ -205,7 +206,7 @@ $pirates['Mary Read'] = ['hat' => 'tricorn', 'weapon' => 'cutlass', 'dubloons' =
 $pirates['John Rackham'] = ['hat' => 'tricorn', 'weapon' => 'dagger', 'dubloons' => 11, 'captured' => true];
 ```
 
-Now all our pirates are stored in the same place and we can access them by name.
+Use PsySH to check all the pirates have been added. Now all our pirates are stored in the same place and we can access them by name.
 What weapon did John Rackham wield?
 
 ```php
@@ -222,6 +223,3 @@ values. Then we saw how Arrays in PHP can be used to store a _list_ of
 values which can be accessed by a numeric _index_. Lastly we learned
 that Arrays can also be used as a _map_ where custom _keys_ are used
 to access _values_.
-
-Next up we'll be looking at using all we've learned so far with
-logic and loops to write a simple program.
