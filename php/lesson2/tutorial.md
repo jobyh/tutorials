@@ -90,7 +90,7 @@ to as 'case'. Three you may have seen before are camel case, snake case and keba
 - `this_is_snake_case`: Words are separated by and underscore which appear to slither along the ground like a snake &ndash; the 'Pythonic' way in Python
 - `this-is-kebab-case`: Words are separated by a hyphen which makes them appear to have been skewered like a shish-kebab &ndash; HTML attributes & CSS classes
 
-In PHP the convention most commonly used by the community for variables is `camelCase` so that's what we'll
+In modern PHP the convention most commonly used by the community for variables is `camelCase` so that's what we'll
 use in these tutorials.
 
 ## Arrays
@@ -220,5 +220,5 @@ values which can be accessed by a numeric _index_. Lastly we learned
 that Arrays can also be used as a _map_ where custom _keys_ are used
 to access _values_.
 
-Next up we'll be looking at using all the values we've learned with
-logic and loops in a simple program.
+Next up we'll be looking at using all we've learned so far with
+logic and loops to write a simple program.
