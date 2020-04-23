@@ -78,7 +78,7 @@ Great job! ⚡ You're all set to [install PHP](#installing-php)
 
 You might already have PHP installed. In the Terminal type `which php` and press enter.
 If you see something like `PHP 7.4.3 (cli) (built: Feb 23 2020 07:24:48) ( NTS )` then
-it is already installed and you can start from 3. below.
+it is already installed and you can _start from 3_.
 
 1. In the Terminal type `brew install php` then press return to install the latest
    PHP using Homebrew (this can take around 5-10 minutes to complete)
@@ -87,7 +87,12 @@ it is already installed and you can start from 3. below.
 3. Type `brew install composer` in your Terminal then press return to install Composer
    &ndash; PHP's code library manager
 4. Paste `composer global require psy/psysh:@stable` in your Terminal and press return to install the [PsySH](https://psysh.org/) **R**ead **E**val **P**rint **L**oop (REPL)
-5. Paste `echo 'PATH=$PATH:~/.config/composer/vendor/bin' >> ~/.bashrc` in you Terminal and press return
+5. Paste the following into your terminal and press return. These tell your Terminal where composer lives:
+   ```
+   test -r ~/.bashrc && echo 'PATH=$PATH:~/.config/composer/vendor/bin' >> ~/.bashrc
+   test -r ~/.zshrc && echo 'PATH=$PATH:~/.config/composer/vendor/bin' >> ~/.zshrc
+   ```
+   Chat to your coach if you'd like a more in-depth explanation 😊
 6. Finally close and reopen the Terminal app then type `psysh --version` and press return. You should see something similar to this `Psy Shell v0.9.12 (PHP 7.4.2 — cli)`
 
 🎉 You're all done! Head over to the [first tutorial](/php/lesson1/tutorial.html).
