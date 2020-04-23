@@ -182,4 +182,4 @@ We learned about the basic data types we'll be working with in PHP:
 
 We also learned how to use PsySH (our REPL) to experiment with PHP types and that we can exit PsySH using `Ctrl + C`.
 
-Next we'll learn how to use [variables, Arrays and functions](/php/lesson2/tutorial.html)
+Next we'll learn how to store these values in [variables and arrays](/php/lesson2/tutorial.html)
