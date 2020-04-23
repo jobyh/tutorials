@@ -31,13 +31,22 @@ language construct which expects to be followed by a String to output. The Strin
 of characters surrounded by single quotes. Try typing your own message.
 
 You can also write Strings using double quotes in PHP. This can be useful when you need to
-output a string which _contains_ either single or double quotes try:
+output a string which _contains_ either single or double quotes. First try this:
+
+```php
+echo 'It's PHP day'
+```
+
+🐞 Erk! You _should_ have seen an error message about an "unexpected T_STRING". This is because the single quote in `It's` is actually terminating the string early then PHP doesn't understand the `s PHP day'` characters after it. Let's try using double quotes to wrap the same string:
+
 
 ```php
 echo "It's PHP day"
 ```
 
-or
+🎉 you should now see the string output correctly in PsySH.
+
+What if we need to use double quotes in our string? We can do something similar the other way around:
 
 ```php
 echo '"What larks, Pip" said Joe'
@@ -46,10 +55,9 @@ echo '"What larks, Pip" said Joe'
 There are also some other useful differences between Strings using single and double quotes
 but we'll get to those in a later tutorial.
 
-TODO fat arrow return vs output
 
 If you have two strings and want to join them together in PHP you use a dot `.` 
-The technical term for this is 'concatenation'. Type the following in PsySH and press enter:
+The programming term for joining strings together is _concatenation_. Type the following in PsySH and press enter:
 
 ```php
 echo 'one, ' . 'two, ' . 'three!'
@@ -82,8 +90,9 @@ or
 12 / 3 + 1
 ```
 
-In the last example the result is 5 as PHP carries out the multiplication _before_ adding five. If we want
-to change this order so that 12 is divided by the result of 3 + 1 we can use brackets to group the addition:
+In the last example the result is 5 as PHP carries out the multiplication _before_ adding one. If you studied Maths you might remember the [BODMAS (or BIDMAS)](https://en.wikipedia.org/wiki/Order_of_operations#Mnemonics) mnemonic which describes
+the order in which operations are carried out. If we want PHPto change this order so that 12 is divided by the result of
+3 + 1 we can use brackets to group the addition:
 
 ```php
 12 / (3 + 1)
