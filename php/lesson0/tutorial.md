@@ -87,7 +87,8 @@ it is already installed and you can _start from 3_.
 3. Type `brew install composer` in your Terminal then press return to install Composer
    &ndash; PHP's code library manager
 4. Paste `composer global require psy/psysh:@stable` in your Terminal and press return to install the [PsySH](https://psysh.org/) **R**ead **E**val **P**rint **L**oop (REPL)
-5. Paste the following into your terminal and press return. These tell your Terminal where composer lives:
+5. Paste the following into your terminal and press return. These tell your Terminal where the libraries installed
+   by composer live:
    ```
    test -r ~/.bashrc && echo 'PATH=$PATH:~/.config/composer/vendor/bin' >> ~/.bashrc
    test -r ~/.zshrc && echo 'PATH=$PATH:~/.config/composer/vendor/bin' >> ~/.zshrc
