@@ -79,9 +79,10 @@ _**Tip:** If you want to clear the screen in PsySH press `Ctrl + L`_
 Let's take a moment to talk about case. If we can use letters and underscores why did we choose
 to name our variable `$luckyNumber` and not `$lucky_number` or `$LUCKYNUMBER`?
 
-After a programming language has been around for a while developers start doing things in certain ways
-so that it's easier to read each other's code and understand what's going on. This is particularly
-important if you're working in a team or sharing code with others in the open source community.
+After a programming language has been around for a while developers start agreeing on consistent approaches
+so that it's easier to read each other's code and quickly understand what's going on. These style guidelines
+are known as _Coding Standards_ and are particularly important if you're working in a team or sharing
+code with others in the open source community.
 
 The way we separate words in variable names (and other things we'll learn about later) is referred
 to as 'case'. Three you may have seen before are camel case, snake case and kebab case:
