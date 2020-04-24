@@ -187,7 +187,7 @@ $anneBonny['captured'] = true;
 
 Using an array in this way can be useful for grouping values together to
 describe real world things which are represented in your program. Arrays
-in this form can also be nested. Let's create an array map of pirates.
+in this form can also be nested. Let's create an Associative Array of pirates.
 
 Follow along in PsySH &ndash; you can copy and paste the longer lines
 if that's easier. Because these array items are quite long at we'll start
