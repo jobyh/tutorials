@@ -152,13 +152,13 @@ $numbers[3] = [4.1, 4.2];
 
 Use PsySH to output `$numbers`. What do you think you will get if you output `$numbers[3][1]`? Give it a go!
 
-### A Map of Values
+### Associative Arrays
 
 No coding tutorial would be complete without a pirate themed section, right?
 Arrr ☠.
 
 As well as storing a _list_ of values Arrays can be used to store a _map_ of
-values:
+values known as an _Associative Array_:
 
 ```php
 $anneBonny = ['hat' => 'tricorn', 'weapon' => 'pistol', 'dubloons' = > 107];
@@ -172,11 +172,13 @@ $anneBonny['dubloons']
 ```
 
 The term _map_ means a mapping between one value and another. In the example
-above the String `'weapon'` was _mapped_ to the Integer `107`. When we use an
-Array as a map we use a **fat arrow** `=>` to map a _key_ to a _value_. Notice
-that these _key_ `=>` _value_ pairs are comma separated like in our list array.
+above the String `'weapon'` was _mapped_ to (or _associated_ with) the Integer `107`.
+Associative Arrays use a **fat arrow** `=>` to map a _key_ to a _value_. Associative
+Arrays can use either a String or an Integer as their key. Notice that these _key_ `=>` _value_
+pairs are comma separated like in our list array.
 
-Adding a new _value_ to the Array is done by also specifying the new _key_.
+Adding a new _value_ to the Associative Array is done by specifying the new _key_
+and using the _assignment operator_ to assign a value.
 
 ```php
 $anneBonny['captured'] = true;
