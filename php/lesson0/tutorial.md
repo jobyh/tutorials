@@ -93,6 +93,7 @@ it is already installed and you can _start from 3_.
    test -r ~/.zshrc && echo 'PATH=$PATH:~/.config/composer/vendor/bin' >> ~/.zshrc
    ```
    Chat to your coach if you'd like a more in-depth explanation 😊
-6. Finally close and reopen the Terminal app then type `psysh --version` and press return. You should see something similar to this `Psy Shell v0.9.12 (PHP 7.4.2 — cli)`
+6. Finally close and reopen the Terminal app then type `psysh --version` and press return. You should see something similar to this `Psy Shell v0.9.12 (PHP 7.4.2 — cli)`. Don't worry if the version of `Psy Shell` isn't _exactly_ the same
+as you'll probably have a newer version since this tutorial was written in the past!
 
 🎉 You're all done! Head over to the [first tutorial](/php/lesson1/tutorial.html).
