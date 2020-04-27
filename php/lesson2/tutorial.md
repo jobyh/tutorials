@@ -162,7 +162,7 @@ As well as storing a _list_ of values Arrays can be used to store a _map_ of
 values known as an _Associative Array_:
 
 ```php
-$anneBonny = ['hat' => 'tricorn', 'weapon' => 'pistol', 'dubloons' = > 107];
+$anneBonny = ['hat' => 'tricorn', 'weapon' => 'pistol', 'dubloons' => 107];
 ```
 
 This form lets us specify custom indexes for our array. If we want to know
