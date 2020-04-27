@@ -173,7 +173,7 @@ $anneBonny['dubloons']
 ```
 
 The term _map_ means a mapping between one value and another. In the example
-above the String `'dubloons'` was _mapped_ to (or _associated_ with) the Integer `107`.
+above, the String `'dubloons'` was _mapped_ to (or _associated_ with) the Integer `107`.
 Associative Arrays use a **fat arrow** `=>` to map a _key_ to a _value_. Associative
 Arrays can use either a String or an Integer as their key. Notice that these _key_ `=>` _value_
 pairs are comma separated like in our list array.
