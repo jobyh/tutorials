@@ -90,9 +90,7 @@ or
 12 / 3 + 1
 ```
 
-In the last example the result is 5 as PHP carries out the multiplication _before_ adding one. If you studied Maths you might remember the [BODMAS (or BIDMAS)](https://en.wikipedia.org/wiki/Order_of_operations#Mnemonics) mnemonic which describes
-the order in which operations are carried out. If we want PHPto change this order so that 12 is divided by the result of
-3 + 1 we can use brackets to group the addition:
+In the last example the result is 5, as PHP carries out the division before adding 1. If you studied Maths, you might remember the [BODMAS (or BIDMAS)](https://en.wikipedia.org/wiki/Order_of_operations#Mnemonics) mnemonic which describes the order in which operations are carried out. If we want PHP to change this order, so that 12 is divided by the result of 3 + 1, we can use brackets to group the addition:
 
 ```php
 12 / (3 + 1)
