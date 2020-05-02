@@ -90,8 +90,8 @@ it is already installed and you can _start from 3_.
 5. Paste the following into your terminal and press return. These tell your Terminal where the libraries installed
    by composer live:
    ```
-   test -r ~/.bashrc && echo 'PATH=$PATH:~/.config/composer/vendor/bin' >> ~/.bashrc
-   test -r ~/.zshrc && echo 'PATH=$PATH:~/.config/composer/vendor/bin' >> ~/.zshrc
+   echo "PATH=\$PATH:$(composer config --global home)/$(composer config --global bin-dir)" >> ~/.bashrc
+   echo "PATH=\$PATH:$(composer config --global home)/$(composer config --global bin-dir)" >> ~/.zshrc
    ```
    Chat to your coach if you'd like a more in-depth explanation 😊
 6. Finally close and reopen the Terminal app then type `psysh --version` and press return. You should see something similar to this `Psy Shell v0.9.12 (PHP 7.4.2 — cli)`. Don't worry if the version of `Psy Shell` isn't _exactly_ the same
