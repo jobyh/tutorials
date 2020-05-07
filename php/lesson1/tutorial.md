@@ -129,8 +129,16 @@ and
 11 % 4
 ```
 
-Modulo might seem a bit impractical right now but we'll see later how it can be used to theme alternating stripes
-in a web page.
+Modulo might seem a bit strange but it can be useful for checking if a number is odd, even or is divisible by another
+without a remainder. Try using modulo 2 `% 2` on some numbers in PsySH e.g.
+```
+7 % 2
+128 % 2
+```
+
+If the result is zero `0` then we know the number is even and if not we know it is odd.
+
+
 
 ## Booleans
 
