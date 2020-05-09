@@ -166,31 +166,56 @@ Use PsySH to evaluate this code:
 echo true
 ```
 
-What was the result and was it what you expected?
+What was the result and was it what you expected? You should have seen a `1` output in PsySH. This 1 is actually a string (rather than an integer).
 
-The reason this happens is that PHP _turns the Boolean into a string_. Similar to JavaScript PHP has some
-predefined steps for converting between types and these aren't always quite what you'd expect.
-
-_Strongly_ typed languages like Java or C# will not coerce values into different types and your program would exit with an error.
+The reason this happens is that PHP _turns the Boolean into a string_ because that's what `echo`
+expects to be given. Similar to JavaScript PHP has some predefined steps for converting between types and these aren't always what you might expect. We use the term 'type coercion' to describe this automatic switching.
 
 You can coerce types manually in PHP. This explicit type coercion is known as 'casting'. Use PsySH and precede
-a value with the type you want to convert it to in brackets. One of:
+a value with the type you want to convert it to in brackets. One of our scalar values:
 
 - **String**: `(string)`
 - **Integer**: `(int)`
 - **Float**: `(float)`
 - **Boolean**: `(bool)`
 
-e.g.
+Let's use this feature to inspect the result of converting a boolean to a string:
 
 ```php
-(string)false
+(string)true
 ```
 
-The above casts a Boolean to a String. Use PsySH to experiment casting values to different types.
+You'll notice that the value which results is the string `"1"`. Let's see what happens
+when we echo a boolean `false`:
 
-Don't worry about trying to learn the steps PHP uses to convert (coerce) types any time soon. Just be aware it does this
-if you see unexpected values when debugging your programs 😊
+```php
+echo false
+```
+
+🤔 nothing happened? Did it? Let's explicitly cast `false` to a string like we did with
+`true` in the previous example. Can you see what the result is? `""` is an _empty_ string
+and this is what was `echo`ed to our Terminal.
+
+Let's finish up with a couple of exercises. Ask your coach for help if you get stuck.
+
+Addition:
+```php
+true + true
+```
+
+Use your detective skills along with type casting in PsySH to figure out why the result is 2.
+
+Concatenation (gluing two strings together).
+```php
+true . true
+```
+
+Can you figure out why the result was "11"?
+
+Use PsySH to experiment casting values to different types. Have fun with it and don't
+worry about memorising exactly how types are coerced by PHP right now.
+Just be aware it does this if you see unexpected values when debugging your programs
+and that you can use PsySH to help figure out what happened 😊
 
 ## Recap
 
