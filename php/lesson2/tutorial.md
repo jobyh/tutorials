@@ -72,6 +72,23 @@ Let's try a couple of experiments. Use PsySH to see the result of these:
 "My lucky number is $luckyNumber"
 ```
 
+To wrap up this quick introduction to variables let's quickly see what happens if a variable _doesn't_ contain a value?
+
+Try this in PsySh
+
+```
+$nothing
+```
+
+First you'll see a warning because the variable hasn't been assigned but underneath that you should see this:
+```
+=> null
+
+```
+
+Null is the last type in PHP we haven't talked about yet. Null is used to represent the _absence_ of a value.
+
+
 _**Tip:** If you want to clear the screen in PsySH press `Ctrl + L`_
 
 ### A Case of Camels 🐫
